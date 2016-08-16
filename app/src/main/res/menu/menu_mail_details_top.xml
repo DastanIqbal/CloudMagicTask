@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto/">
+    <item
+        android:id="@+id/mnu_delete"
+        android:icon="@drawable/ic_delete_white_24dp"
+        android:orderInCategory="100"
+        android:title="Delete"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/mnu_archive"
+        android:icon="@drawable/ic_archive_white_24dp"
+        android:orderInCategory="101"
+        android:title="Archive"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/mnu_moveto"
+        android:icon="@drawable/ic_move_to_inbox_white_24dp"
+        android:orderInCategory="102"
+        android:title="Move to"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/mnu_mails"
+        android:icon="@drawable/ic_email_white_24dp"
+        android:orderInCategory="103"
+        android:title="Mails"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/mnu_markspam"
+        android:orderInCategory="104"
+        android:title="Mark as Spam"
+        app:showAsAction="never" />
+</menu>

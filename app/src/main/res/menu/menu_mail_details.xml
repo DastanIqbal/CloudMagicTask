@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mnu_reply"
+        android:orderInCategory="100"
+        android:title="Reply" />
+
+    <item
+        android:id="@+id/mnu_forward"
+        android:orderInCategory="101"
+        android:title="Forward" />
+    <item
+        android:id="@+id/mnu_create_cal_event"
+        android:orderInCategory="102"
+        android:title="Create Calender Event" />
+    <item
+        android:id="@+id/mnu_show_details"
+        android:orderInCategory="103"
+        android:title="Show Details" />
+    <item
+        android:id="@+id/mnu_save_emailto"
+        android:orderInCategory="104"
+        android:title="Save Emailto" />
+    <item
+        android:id="@+id/mnu_print"
+        android:orderInCategory="105"
+        android:title="Print" />
+</menu>

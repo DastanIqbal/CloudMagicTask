@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mail_details_bg"
+        tools:context="com.dastanapps.cloudmagictask.activity.MainActivity">
+
+        <RelativeLayout
+            android:id="@+id/rl_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/mail_item_bg"
+            android:padding="@dimen/dimen16">
+
+            <TextView
+                android:id="@+id/tv_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:ems="17"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/subject"
+                android:textSize="@dimen/subHeading"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imv_starred"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_star_border_black_24dp" />
+
+            <TextView
+                android:id="@+id/tv_particpants"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/tv_subject"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/tv_subject"
+                android:layout_below="@+id/tv_subject"
+                android:ems="17"
+                android:maxLines="1"
+                android:paddingTop="@dimen/dimen8"
+                android:text=""
+                android:textColor="@color/preview"
+                android:textSize="@dimen/caption" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/rl_header"
+            android:background="@color/colorPrimary" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/divider"
+            android:background="@color/mail_item_bg">
+
+            <include
+                android:id="@+id/rl_body_header"
+                layout="@layout/mail_detail_replyitem" />
+
+            <TextView
+                android:id="@+id/tv_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_body_header"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                android:text=""
+                android:textColor="@color/subject"
+                android:textSize="@dimen/title" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>
